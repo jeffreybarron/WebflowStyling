@@ -4,16 +4,21 @@
  * Released under the MIT License
  * Released on: October 12 2023
  * Comment Inspired by a combination of systems including Tailwindcss, Lumos, and others
+ 
+Webflow have recently provided functionality for ReactJS integration.
+Tailwindcss popular formating framework in nodejs/ReactJS developement. 
+Therefore, to hopefully ensure consistent sizing across my webflow and react projects
+I have elected to implement Tailwindcss spacing for my Webflow via CSS
+https://tailwindcss.com/docs/customizing-spacing#default-spacing-scale
+Name | Size    | Pixels
+1    | 0.25rem | 4px
+2    | 0.5rem  | 8px
+3    | 0.75rem | 12ox
+4    | 1rem    | 16px
+size-factor is a multiplier used to scale all variables equally
+
 */
 
-/* 
-base page size variable 
-e.g.
-size-factor is a multiplier used to scale all variables equally
-1 = 1rem, 1-25 = 1.25rem, 1-5 = 1.5rem, 1-75 = 1.75rem
-2 = 2rem, etc
-24 = 24rem
-*/
 html {
   --size-factor: 1;
   --size0-5: calc(0.125rem * var(--size-factor));
@@ -28,21 +33,10 @@ html {
   --size6: calc(1.5rem * var(--size-factor));
   --size7: calc(1.75rem * var(--size-factor));
   --size8: calc(2rem * var(--size-factor));
-  --size9: calc(2.25rem * var(--size-factor));
   --size10: calc(2.5rem * var(--size-factor));
-  --size11: calc(2.75rem * var(--size-factor));
   --size12: calc(3rem * var(--size-factor));
-  --size13: calc(3.25rem * var(--size-factor));
   --size14: calc(3.5rem * var(--size-factor));
-  --size15: calc(3.75rem * var(--size-factor));
   --size16: calc(4rem * var(--size-factor));
   --size20: calc(5rem * var(--size-factor));
   --size24: calc(6rem * var(--size-factor));
-}
-
-* {
-  --grid-row-gap: 0;
-  grid-row-gap: var(--grid-row-gap);
-  --grid-column-gap: 0;
-  grid-column-gap: var(--grid-column-gap);
 }
