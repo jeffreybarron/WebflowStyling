@@ -1,2 +1,2 @@
 # WebflowStyling
-Styleing for Webflow projects
+Styling for Webflow projects
